@@ -1,4 +1,4 @@
-# pb_entrada AKA Charselector
+# pb_charselector
 
 Only supports esx (i made it a long time ago) the code is terrible so i dont recomend to use but the UI just fine (one of my fist projects) :)
 

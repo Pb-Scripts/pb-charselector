@@ -1,30 +1,28 @@
 fx_version 'cerulean'
 game 'gta5'
-author "Pb"
+author 'Pb'
+description ''
 
-ui_page 'html/index.html'
+ui_page 'ui/index.html'
 lua54 'yes'
 
 files {
-    'html/index.html',
-    'html/style.css',
-    'html/script.js',
-    'locales/*.json'
+    'ui/index.html',
+    'ui/style.css',
+    'ui/script.js',
+    'ui/img/pixolo.png'
 }
 
-shared_scripts {
-    '@pb-utils/init.lua',
-    'config.lua',
-    '@ox_lib/init.lua'
+client_scripts {
+    'client/*.lua'
 }
-
-client_script 'client.lua'
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server.lua'
+    'server/*.lua',
 }
 
-dependencies {
-    'pb-utils'
+shared_scripts {
+    'config.lua',
+    '@ox_lib/init.lua'
 }

@@ -1,47 +1,28 @@
 Config = {}
 
-Config.CamCoords = vec4(-766.1462, 314.0835, 175.4012, 318.1053)
-
-Config.PedSpawns = {
-
-    {
-        coords = vector4(-764.7827, 318.2341, 175.4011, 213.4687),
-        anim = "base",
-        dict = 'timetable@ron@ig_3_couch',
+Config.CharSelectPoints = {
+    [1] = {
+        charcoords = {
+            vector4(-1009.1520, -475.7567, 50.1913, 212.8906),
+            vector4(-1007.8180, -477.6988, 50.0281, 11.5914),
+            vector4(-1006.6281, -476.9682, 50.0279, 30.3282),
+            vector4(-1010.4489, -476.5938, 50.0261, 160.4218),
+            vector4(-1007.1887, -474.7492, 49.5262, 168.2194),
+        },
+        animations = {
+            {"timetable@jimmy@mics3_ig_15@", "idle_a_jimmy"},
+            {"timetable@ron@ron_ig_2_alt1", "ig_2_alt1_base"},
+            {"timetable@ron@ig_3_couch", "base"},
+            {"missheist_jewelleadinout", "jh_int_outro_loop_a", 17},
+            {nil, nil, nil, "WORLD_HUMAN_STAND_MOBILE"},
+        },
+        center = vec2(-1008.1287, -476.3619),
+        point = vec2(-1006.2429, -479.5425),
+        w = 25.0,
+        z = 50.3269,
     },
-
-    {
-        coords = vector4(-763.4463, 319.4970, 175.4012, 147.7132),
-        anim = "_idle_a",
-        dict = 'random@shop_tattoo',
-    },
-
-    {
-        coords = vector4(-762.7417, 318.3187, 175.4011, 151.2334),
-        anim = "ig_5_p3_base",
-        dict = 'timetable@ron@ig_5_p3',
-    },
-
-    {
-        coords = vector4(-760.3704, 318.1184, 175.4012, 117.9344),
-        anim = "idle_a",
-        dict = 'amb@world_human_leaning@male@wall@back@foot_up@idle_a',
-    },
-
-    {
-        coords = vector4(-762.5073, 315.7972, 175.4011, 50.5152),
-        anim = "base",
-        dict = 'timetable@ron@ig_3_couch',
-    },
-
 }
 
-Config.EnableDelete = true
-Config.DefaultCharsNumber = 2
-Config.CharsNumber = {
-    ["license2:1eac3575fe104d02ff446cc989c9b4928ad428cd"] = 5 --identifier
-}
+Config.CreatePed = vec4(-594.7723, 51.6323, 93.1348, 92.1040)
 
-Config.Spawns = {
-    vector4(166.5717, -958.1555, 30.0919, 52.4551)
-}
+Config.SpawnPed = vec4(-259.8645, -976.3132, 31.2199, 200.4969)

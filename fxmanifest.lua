@@ -1,40 +1,30 @@
-fx_version 'adamant'
-
+fx_version 'cerulean'
 game 'gta5'
-
-description 'ESX Identity'
-
-version '1.2.0'
-
-server_scripts {
-	'@es_extended/locale.lua',
-	'@mysql-async/lib/MySQL.lua',
-	'locales/br.lua',
-	'config.lua',
-	'server/main.lua'
-}
-
-client_scripts {
-	'@es_extended/locale.lua',
-	'locales/br.lua',
-	'config.lua',
-	'client/main.lua'
-}
+author "Pb"
 
 ui_page 'html/index.html'
+lua54 'yes'
 
 files {
-	'html/index.html',
-	'html/script.js',
-	'html/img/logo.png',
-	'html/style.css'
+    'html/index.html',
+    'html/style.css',
+    'html/script.js',
+    'locales/*.json'
 }
 
-dependency {
-	'es_extended',
+shared_scripts {
+    '@pb-utils/init.lua',
+    'config.lua',
+    '@ox_lib/init.lua'
 }
 
+client_script 'client.lua'
 
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    'server.lua'
+}
 
-
-client_script '@packmaps/src/c_00.lua'
+dependencies {
+    'pb-utils'
+}

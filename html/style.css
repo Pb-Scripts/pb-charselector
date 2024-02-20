@@ -1,245 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
 body {
-
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-       height: 100vh;
-     overflow: hidden;
-     font-family: Arial, Helvetica, sans-serif;
-     color: white;
-     perspective: 3046px;
+    color: rgb(250, 250, 250);
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
 }
 
-.personagem {
-  text-align: center;
-  margin-top: 3.5%;
-  font-size: 2.4vh;
-}
-
-.geral {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  display:grid;
-  grid-template-columns: 200px 300px;
-
-}
-
-.noinfo {
-  font-size: 1.6vh;
-  margin-left: 5%;
-}
-
-.lista1 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 250px;
-}
-
-.lista3 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 250px;
-  text-align: center;
-}
-
-.lista3 li a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 5.5%;
-  margin-top: 5.5%;
-  margin-left: 20%;
-  color: #fdfbfc;
-}
-
-.txtB {
-  margin-left: 20%;
-}
-
-.lista2 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 250px;
-}
-
-.lista1 li a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 12.5%;
-  color: #fdfbfc;
-}
-
-.lista2 li a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 12.5%;
-  color: #fdfbfc;
-}
-
-.icon {
+.wrapper {
     position: absolute;
-    left: 579px;
-    top: 30px;
-}
- .borderBot {
-   position: absolute;
-   width: 102%;
-   height: 50%;
-   bottom: 9px;
-   border-top: 2px solid #e4e4e3;
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.63), #444444e8);
- }
-
- .borderTop {
-  position: absolute;
-  width: 102%;
-  height: 50%;
-  top: -8px;
-  border-bottom: 2px solid #e4e4e3;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.63), #444444e8);
+    height: 99%;
+    width: 99%;
 }
 
-input[type=text] {
-	background-color: whitesmoke;
-	width: 100%;
-	transform: translateX(12.5%);
-	padding: 7px;
-	text-align: center;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px dashed black;
+.charwrapper {
+    position: absolute;
+    background: rgb(91,90,96);
+    background: linear-gradient(180deg, rgb(65, 65, 66) 0%, rgba(42,41,41,1) 35%, rgba(41,46,47,1) 100%); 
+    width: 20%;
+    padding: 1% 0;
+    border-radius: 5px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 0.82;
+    border: 1px solid #b1e5f2ff;
 }
 
-.container {
-  position: relative;
-  left: 8%;
+.charinfowrapper {
+    width: 80%;
+    margin-left: 10%;
+    padding: 4% 0;
+    display: flex;
+    flex-direction: row;
 }
 
-
-
-.center {
-  text-align: center;
-  position: relative;
-  left: 17%;
-  bottom: 10%;
+.charname {
+    margin-bottom: 1%;
 }
 
-
- 
-.box {
-   position: absolute;
-   left: 102%;
-   bottom: 42%;
-   height: 320px;
-   width: 390px;
-   display: block;
-   border: 2px solid #e4e4e3;
-   border-radius: 5px;
-   transform: rotateX(0deg) rotateY(-33deg);
-   transform-style: preserve-3d;
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.884), #444444e8);
-
+.infochar {
+    font-size: 80%;
+    margin-top: 8%;
 }
 
-#name {
-  position: relative;
-  height: 70px;
-  width: 450px;
-  top: -15%;
-  font-size: 1.6vh;
-  margin: 0 auto;
-  display: block;
-  background: linear-gradient(0deg, rgb(0, 0, 0), #444444);
+.fa-id-card.infocharicon {
+    margin-right: 8%;  
 }
 
-#name:hover {
-  border: 1px solid #d8d7d3;
+.fa-person.infocharicon {
+    margin-right: 13%;
 }
 
-#name p {
-  position: relative;
-  top: 14%;
-  margin-left: 4%;
-  margin-right: 24%;
-  float: left;
+.fa-user-doctor.infocharicon {
+    margin-right: 8%;
 }
 
-
-.fa-user {
-  color: rgb(255, 217, 0);
+.charimage {
+    background-color: black;
+    width: 30%;
+    margin-left: 34%;
 }
 
-#playbutton {
-  position: relative;
-  height: 60px;
-  width: 450px;
-  top: 60%;
-  font-size: 2.2vh;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  background: linear-gradient(0deg, rgb(0, 0, 0), #444444);
+.buttonswrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#playbutton p {
-  color: white;
-  position: relative;
-  bottom: 15%;
+.buttonchar {
+    margin: 3% auto;
+    padding: 1% 8%;
+    border-radius: 3px;
 }
 
-.box2 {
-  position: absolute;
-  right: 102%;
-  bottom: 48%;
-  height: 200px;
-  width: 550px;
-  display: block;
-  border: 4px solid #e4e4e3;
-  border-radius: 5px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.884), #444444e8);
-  opacity: 0.90;
-  transform: scale(0.9) rotateX(0deg) rotateY(50deg);
-  transform-style: preserve-3d;
+.delete {
+    background-color: #e13700ff;
 }
 
-.lds-facebook {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  top: -10px;
+.select {
+    background-color: #3ec300ff;
 }
-.lds-facebook div {
-  display: inline-block;
-  position: absolute;
-  left: 8px;
-  width: 16px;
-  background: #fff;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+
+.charSelectorDiv {
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    transform: translate(-50%, -50%);
 }
-.lds-facebook div:nth-child(1) {
-  left: 8px;
-  animation-delay: -0.24s;
+
+.AddNewChar {
+    position: absolute;
+    left: 95%;
+    top: 93%;
+    color: whitesmoke;
+    background: rgba(145, 143, 143, 0.5);
+    box-shadow: 3px 3px 5px rgb(5, 5, 5, 0.5);
+    transition: 0.25s;
+    padding: 0.7%;
+    font-size: 2vh;
+    border-radius: 50px;
+    margin: 0.3%;
+    display: inline-flex;
 }
-.lds-facebook div:nth-child(2) {
-  left: 32px;
-  animation-delay: -0.12s;
+
+.AddNewChar:hover {
+    background: rgba(145, 143, 143, 1.0);
 }
-.lds-facebook div:nth-child(3) {
-  left: 56px;
-  animation-delay: 0;
+
+.CharsCreation {
+    position: relative;
+    background: rgb(91,90,96);
+    background: linear-gradient(180deg, rgb(65, 65, 66) 0%, rgba(42,41,41,1) 35%, rgba(41,46,47,1) 100%);
+    width: 25%;
+    height: 60%;
+    left: 36%;
+    top: 15%;
 }
-@keyframes lds-facebook {
-  0% {
-    top: 8px;
-    height: 64px;
-  }
-  50%, 100% {
-    top: 24px;
-    height: 32px;
-  }
+
+.list-label {
+    display: flex;
+    flex-direction: row;
 }

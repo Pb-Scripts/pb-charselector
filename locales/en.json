@@ -1,0 +1,17 @@
+{
+    "error_title": "Error",
+    "deletechar_description": "You can't delete characters!",
+    "gender_male": "Male",
+    "gender_female": "Female",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "nacionality": "Nacionality",
+    "born": "DOB",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "select": "Select",
+    "notallfilled": "Not all fields are filled out",
+    "blanckspaces": "You have black spaces!",
+    "no_gender" : "You didn't selected a gender!",
+    "logout_help": "Logout yourself or others!"
+}

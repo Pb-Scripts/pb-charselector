@@ -1,0 +1,17 @@
+{
+    "error_title": "Erro",
+    "deletechar_description": "Não podes apagar personagens!",
+    "gender_male": "Masculino",
+    "gender_female": "Feminino",
+    "firstname": "Primeiro Nome",
+    "lastname": "Último Nome",
+    "nacionality": "Nacionalidade",
+    "born": "Data de Nascimento",
+    "cancel": "Cancelar",
+    "delete": "Apagar",
+    "select": "Selecionar",
+    "notallfilled": "Não tens tudo preenchido!",
+    "blanckspaces": "Tens espaços em algum dos campos!",
+    "no_gender" : "Não selecionas-te gênero!",
+    "logout_help": "Dar Logout a ti ou a outros"
+}
